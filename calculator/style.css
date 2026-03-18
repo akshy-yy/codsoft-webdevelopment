@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.calculator h2 {
+    margin-bottom: 15px;
+    color: #ff4d6d;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    background: #ffe5ec;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    gap: 12px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #ffc2d1;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background: #ff8fab;
+    transform: scale(1.05);
+}
+
+/* Special buttons */
+.clear {
+    background: #ff4d6d;
+    color: white;
+}
+
+.equal {
+    background: #ff758f;
+    color: white;
+}
+
+.operator {
+    background: #ffb3c6;
+}
+
+/* Zero button wider */
+.zero {
+    grid-column: span 2;
+}
